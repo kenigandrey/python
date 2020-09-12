@@ -5,8 +5,6 @@
 # Иванов 23543.12
 # Петров 13749.32
 
-from builtins import map
-
 try:
     my_f = open("text_3.txt", "r", encoding="utf-8")
     lst = my_f.read().split("\n")

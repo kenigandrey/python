@@ -17,10 +17,10 @@ class Matrix:
     # матрицы д.б. одинаковой размерности
     def __add__(self, other):
         res = []
-        for i in range(len(list(self.matrix))):
+        for i in range(len(self.matrix)):
             lst = []
-            for j in range(len(list(self.matrix[i]))):
-                lst.append(float(list(list(self.matrix)[i])[j]) + float(list(list(other.matrix)[i])[j]))
+            for j in range(len(self.matrix[i])):
+                lst.append(self.matrix[i][j] + other.matrix[i][j])
             res.append(lst)
         return Matrix(res)
 
